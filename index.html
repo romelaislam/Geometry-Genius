@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry Genius</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.9.2/dist/full.css" rel="stylesheet" type="text/css" />
+   <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body> 
+ <header>
+
+</header>
+<main class="mt-12 ">
+   <!-- container -->
+   <div class="flex flex-col lg:flex-row">
+
+   <!-- shope-container -->
+
+    <div class="flex-1 grid grid-cols-1 lg:grid-cols-4 gap-6 md:grid-cols-2">
+         <!-- first-card -->
+    <div class="card" style="width: 18rem;">
+         <img src="./images/triangle.png" class="w-60 justify-center mx-auto" alt="...">
+          <div class="card-body">
+          <h5 class="card-title text-3xl font-semibold mx-auto">Triangle</h5>
+           <p class="text-center">Area (A) = 0.5 X b X h</p>
+            <p>
+          <!-- triangle-base -->
+              <input type="text" placeholder="b" class="border bg-gray-200 w-20 px-2" name="" id="triangle-base">
+              <span class="m-1">cm</span>
+
+              <!-- triangle-hight -->
+
+              <input type="text" placeholder="h" class="border bg-gray-200 w-20 px-2" name="" id="triangle-hight">
+              <span class="">cm</span>
+              </p>
+             <p class="text-2xl">Area : <span id="AreaSpan" class="font-semibold"> 0 </span>cm <sup>2</sup></p>
+             <a href="#" class="btn btn-primary"  onclick="TriangleAreaCalculate()" >Calculate</a>
+         </div>
+       </div>
+                <!-- 2nd-card -->
+                <div class="card" style="width: 18rem;">
+                  <img src="./images/rectangle.png" class="w-60 justify-center mx-auto" alt="...">
+                   <div class="card-body">
+                   <h5 class="card-title text-3xl font-semibold mx-auto">Rectangle</h5>
+                    <p class="text-center">Area (A) = w x i</p>
+                     <p>
+                   <!-- Rectangle-width -->
+                       <input type="text" placeholder="w" class="border bg-gray-200 w-20 px-2" name="" id="Rectangle-width">
+                       <span class="m-1">cm</span>
+                       <!-- Rectangle-length -->
+                       <input type="text" placeholder="l" class="border bg-gray-200 w-20 px-2" name="" id="Rectangle-length">
+                       <span class="">cm</span>
+                       </p>
+                      <p class="text-2xl">Area : <span id="Rectangle-Area" class="font-semibold"> 0 </span>cm <sup>2</sup></p>
+                      <a href="#" class="btn btn-primary"  onclick="RectangleAreaCalculation()" >Calculate</a>
+                  </div>
+                </div>
+                <!-- 3rd-card -->
+                <div class="card" style="width: 18rem;">
+                  <img src="./images/parallelogram.png" class="w-60 justify-center mx-auto" alt="...">
+                   <div class="card-body">
+                   <h5 class="card-title text-3xl font-semibold mx-auto">Parallelogram</h5>
+                    <p class="text-center">Area (A) = b X h</p>
+                     <p>
+                   <!-- Parallelogram-base -->
+                       <input type="text" placeholder="b" class="border bg-gray-200 w-20 px-2" name="" id="Parallelogram-base">
+                       <span class="m-1">cm</span>
+         
+                       <!-- Parallelogram-hight -->
+         
+                       <input type="text" placeholder="h" class="border bg-gray-200 w-20 px-2" name="" id="Parallelogram-hight">
+                       <span class="">cm</span>
+                       </p>
+                      <p class="text-2xl">Area : <span id="Parallelogram-Area" class="font-semibold"> 0 </span>cm <sup>2</sup></p>
+                      <a href="#" onclick="ParallelogramCalculate()" class="btn btn-primary">Calculate</a>
+                  </div>
+                </div>
+                <!-- Area calculator -->
+            <div class=" w-[400px]">
+              <div class="text-4xl">
+                  <div class="">Area calculator</div>
+              </div>
+          </div>
+
+          <!-- Ellipse-Area -->
+
+          <div class="card" style="width: 18rem;">
+            <img src="./images/ellipse.png" class="w-60 justify-center mx-auto" alt="...">
+             <div class="card-body">
+             <h5 class="card-title text-3xl font-semibold mx-auto">Rectangle</h5>
+              <p class="text-center">Area (A) =   πab</p>
+               <p>
+             <!-- Ellipse-a -->
+                 <input type="text" placeholder="w" class="border bg-gray-200 w-20 px-2" name="" id="Ellipse-a">
+                 <span class="m-1">cm</span>
+                 <!-- Ellipse-b -->
+                 <input type="text" placeholder="l" class="border bg-gray-200 w-20 px-2" name="" id="Ellipse-b">
+                 <span class="">cm</span>
+                 </p>
+                <p class="text-2xl">Area : <span id="Ellipse-Area" class="font-semibold"> 0 </span>cm <sup>2</sup></p>
+                <a href="#" class="btn btn-primary"  onclick="EllipseAreaCalculation()" >Calculate</a>
+            </div>
+          </div>
+                  </div>
+            </div>
+            
+        </div>
+          
+    </main>
+
+
+       
+       
+
+       
+       <script src="./js/Rectangle-area.js"></script>
+       <script src="./js/area-calculator.js"></script>
+
+
+</body>
+</html>
